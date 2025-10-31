@@ -22,3 +22,6 @@ const correctCode = "5683"; // your secret code
           message.textContent = "Access Denied.";
         }
       }
+
+    }
+
