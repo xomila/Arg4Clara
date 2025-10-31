@@ -1,118 +1,80 @@
 body {
-      background-color: #111;
-      color: #fff;
-      font-family: 'Courier New', monospace;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
+    background: #000;
+    color: #00ff55;
+    font-family: "Courier New", monospace;
+    padding: 20px;
+    overflow: hidden;
+}
 
-    h2 {
-      margin-bottom: 20px;
-    }
+/* Terminal text */
+#terminal {
+    white-space: pre-line;
+    text-shadow: 0 0 6px #00ff55;
+    font-size: 18px;
+}
 
-    input {
-      font-size: 1.5em;
-      text-align: center;
-      padding: 10px;
-      border: 2px solid #555;
-      border-radius: 5px;
-      background-color: #222;
-      color: #fff;
-      width: 120px;
-      letter-spacing: 5px;
-    }
+/* Cursor */
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background: #00ff55;
+    margin-left: 2px;
+    animation: blink .7s infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
 
-    button {
-      margin-top: 15px;
-      font-size: 1.1em;
-      padding: 8px 16px;
-      border: none;
-      border-radius: 3px;
-      font-weight: lighter;
-      background-color: #444;
-      color: #fff;
-      cursor: pointer;
-    }
+/* Scanline */
+.scanline {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: repeating-linear-gradient(
+    rgba(0,255,0,0.06),
+    rgba(0,255,0,0.06) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  pointer-events: none;
+}
 
-    button:hover {
-      background-color: #666;
-    }
+/* Code input area hidden until boot finishes */
+#codeSection {
+  margin-top: 20px;
+  display: none;
+}
 
-    #message {
-      margin-top: 20px;
-      font-size: 1.2em;
-      color: #ff4444;
-    }
+input {
+  font-size: 1.3em;
+  text-align: center;
+  padding: 8px;
+  border: 2px solid #00ff55;
+  background: #001900;
+  color: #00ff55;
+  width: 120px;
+  letter-spacing: 6px;
+}
 
-    #secretLink {
-      display: none;
-      margin-top: 10px;
-      color: #44aaff;
-      text-decoration: none;
-      font-size: 1.1em;
-    }
+button {
+  margin-left: 10px;
+  font-size: 1em;
+  padding: 6px 12px;
+  border: 2px solid #00ff55;
+  background: black;
+  color: #00ff55;
+  cursor: pointer;
+}
+button:hover { background: #002800; }
 
-    #secretLink:hover {
-      text-decoration: underline;
-body {
-      background-color: #111;
-      color: #fff;
-      font-family: 'Courier New', monospace;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
+#message {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #ff4444;
+}
 
-    h2 {
-      margin-bottom: 20px;
-    }
-
-    input {
-      font-size: 1.5em;
-      text-align: center;
-      padding: 10px;
-      border: 2px solid #555;
-      border-radius: 5px;
-      background-color: #222;
-      color: #fff;
-      width: 120px;
-      letter-spacing: 5px;
-    }
-
-    button {
-      margin-top: 15px;
-      font-size: 1.1em;
-      padding: 8px 16px;
-      border: none;
-      border-radius: 5px;
-      background-color: #444;
-      color: #fff;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #666;
-    }
-
-    #message {
-      margin-top: 20px;
-      font-size: 1.2em;
-      color: #ff4444;
-    }
-
-    #secretLink {
-      display: none;
-      margin-top: 10px;
-      color: #44aaff;
-      text-decoration: none;
-      font-size: 1.1em;
-    }
-
-    #secretLink:hover {
-      text-decoration: underline;
-    }
+#secretLink {
+  display: none;
+  margin-top: 10px;
+  color: #44aaff;
+  text-decoration: none;
+}
+#secretLink:hover { text-decoration: underline; }

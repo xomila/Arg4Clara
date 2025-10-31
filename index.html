@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Enter the Code</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Retro Terminal</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h2>Enter 4-Digit Code</h2>
+<div id="terminal"></div><span class="cursor"></span>
+<div class="scanline"></div>
+
+<div id="codeSection">
+  <p>ENTER SECURITY CODE:</p>
   <input type="password" id="codeInput" maxlength="4" placeholder="****">
-  <button onclick="checkCode()">unlock</button>
+  <button onclick="checkCode()">ENTER</button>
   <div id="message"></div>
   <a id="secretLink" href="hidden.html">Try another way...</a>
+</div>
+<script src="script.js"></script>
 
-  <script src="script.js"></script>
-  
+
 </body>
 </html>
-  
