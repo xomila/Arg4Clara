@@ -31,7 +31,7 @@ function type() {
 }
 type();
 
-/* Security Code Logic */
+
 const correctCode = "5683";
 let attempts = 0;
 

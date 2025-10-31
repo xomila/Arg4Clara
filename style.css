@@ -6,14 +6,14 @@ body {
     overflow: hidden;
 }
 
-/* Terminal text */
+
 #terminal {
     white-space: pre-line;
     text-shadow: 0 0 6px #00ff55;
     font-size: 18px;
 }
 
-/* Cursor */
+
 .cursor {
     display: inline-block;
     width: 10px;
@@ -23,7 +23,7 @@ body {
 }
 @keyframes blink { 50% { opacity: 0; } }
 
-/* Scanline */
+
 .scanline {
   position: fixed;
   top: 0; left: 0;
