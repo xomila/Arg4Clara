@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
       background-color: #111;
       color: #fff;
@@ -57,7 +56,6 @@ body {
 
     #secretLink:hover {
       text-decoration: underline;
-=======
 body {
       background-color: #111;
       color: #fff;
@@ -116,5 +114,4 @@ body {
 
     #secretLink:hover {
       text-decoration: underline;
->>>>>>> 7193360 (Initial commit)
     }
