@@ -1,9 +1,52 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Little Game</title>
+<meta charset="UTF-8">
+<title>XP Desktop</title>
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Welcome to the Little Game!</h1>
+
+<div class="desktop">
+    <div class="icon" onclick="openApp('My Files')">
+        <img src="https://icons.iconarchive.com/icons/hopstarter/mac-folders/256/Windows-icon.png">
+        <span>My Files</span>
+    </div>
+
+    <div class="icon" onclick="openApp('Windows')">
+        <img src="https://icons.iconarchive.com/icons/ncrow/mega-pack-2/256/Windows-Media-Center-icon.png">
+        <span>Windows</span>
+    </div>
+
+    <div class="icon" onclick="openApp('Internet Explorer')">
+        <img src="https://icons.iconarchive.com/icons/tonev/windows-7/256/windows-7-ie-icon.png">
+        <span>Internet Explorer</span>
+    </div>
+
+    <div class="icon" onclick="openApp('Recycle Bin')">
+        <img src="https://icons.iconarchive.com/icons/iconshock/vista-general/256/trash-icon.png">
+        <span>Recycle Bin</span>
+    </div>
+
+    <div class="icon" onclick="openApp('Games')">
+        <img src="https://icons.iconarchive.com/icons/lgp85/blue-crystal/256/Games-icon.png">
+        <span>Games</span>
+    </div>
+
+    <div class="icon" onclick="openApp('Command Prompt')">
+        <img src="https://icons.iconarchive.com/icons/hopstarter/3d-cartoon-vol3/256/Command-Prompt-icon.png">
+        <span>Command Prompt</span>
+    </div>
+</div>
+
+<div class="taskbar">
+    <div class="start-btn">
+        <img src="https://icons.iconarchive.com/icons/tatice/operating-systems/256/Windows-icon.png" class="start-icon" width="20" height="20">
+        <span>Start</span>
+    </div>
+    <div class="clock" id="clock"></div>
+</div>
+
+<script src="./script.js"></script>
 </body>
 </html>

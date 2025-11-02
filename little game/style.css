@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://i.pinimg.com/1200x/25/aa/1a/25aa1a16b78d63f639b04b8427d4f2d6.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Tahoma, sans-serif;
+    color: white;
+    user-select: none;
+}
+
+.desktop {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
+
+.icon {
+    width: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: auto;
+}
+
+.icon span {
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+    text-shadow: 1px 1px 3px black;
+}
+
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 3%, #d4d4d4 100%);
+    border-top: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0 2px;
+    z-index: 1000;
+}
+
+.clock {
+    margin: 0 5px;
+    padding: 2px 8px;
+    color: #000000;
+    font-size: 11px;
+    font-family: "Tahoma", sans-serif;
+    background: #ffffff;
+    border: 1px solid #a0a0a0;
+    border-radius: 2px;
+    height: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 55px;
+    margin-left: auto;
+    box-shadow: inset 1px 1px 0px rgba(255,255,255,0.8), 
+                inset -1px -1px 0px rgba(0,0,0,0.1);
+}
+
+.start-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 2px 8px;
+    height: 26px;
+    margin: 2px;
+    background: linear-gradient(to bottom, #5cb85c 0%, #3e8e41 50%, #2f6b2f 100%);
+    border: 1px solid #1e5124;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: inset 1px 1px 0px rgba(255,255,255,0.8), 
+                inset -1px -1px 0px rgba(0,0,0,0.1);
+    min-width: 85px;
+}
+
+.start-btn:hover {
+    background: linear-gradient(to bottom, #6cd86c 0%, #4fa34f 50%, #3a7b3a 100%);
+}
+
+.start-btn:active {
+    box-shadow: inset -1px -1px 0px rgba(255,255,255,0.8), 
+                inset 1px 1px 0px rgba(0,0,0,0.1);
+    padding: 3px 7px 1px 9px; /* Shift content when pressed */
+}
+
+.start-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
