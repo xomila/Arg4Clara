@@ -8,12 +8,12 @@
 <body>
 
 <div class="desktop">
-    <div class="icon" onclick="openApp('My Files')">
+    <div class="icon my-files-icon">
         <img src="https://icons.iconarchive.com/icons/hopstarter/mac-folders/256/Windows-icon.png">
         <span>My Files</span>
     </div>
 
-    <div class="icon" onclick="openApp('Windows')">
+    <div class="icon windows-desktop-icon">
         <img src="https://icons.iconarchive.com/icons/ncrow/mega-pack-2/256/Windows-Media-Center-icon.png">
         <span>Windows</span>
     </div>
@@ -48,5 +48,25 @@
 </div>
 
 <script src="./script.js"></script>
+<div id="bsod">
+  <span class="title">*** STOP: 0x0000008E (0xC0000005, 0xF83A2C90)</span><br><br>
+  A problem has been detected and Windows has been shut down to prevent damage<br><br>
+  The problem seems to be caused by the following file: ILOVEMYGF.FILE<br><br>
+  Press any key to restart your system...
+</div>
+
+<!-- XP File Explorer Window -->
+<div class="window" id="explorerWindow">
+  <div class="title-bar">
+    <span id="explorerTitle">My Documents</span>
+    <div class="buttons">
+      <button id="closeExplorer">X</button>
+    </div>
+  </div>
+  <div class="file-area" id="fileArea">
+    <!-- Folders will appear here -->
+  </div>
+</div>
+
 </body>
 </html>
