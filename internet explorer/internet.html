@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Vintage Internet Explorer — 1990s / 2000s Replica</title>
+<link rel="stylesheet" href="./style.css" />
+<script src="./script.js" defer></script>
+
+</head>
+<body>
+<div class="desk">
+  <div class="ie-window" id="ieWindow">
+    <div class="titlebar" id="titlebar">
+      <div class="icon">e</div>
+      <div class="title">Microsoft Internet Explorer</div>
+      <div class="window-controls">
+        <div class="win-btn" id="minBtn">–</div>
+        <div class="win-btn" id="maxBtn">□</div>
+        <div class="win-btn" id="closeBtn">×</div>
+      </div>
+    </div>
+
+    <div class="menubar">
+      <div>File</div><div>Edit</div><div>View</div><div>Favorites</div><div>Tools</div><div>Help</div>
+    </div>
+
+    <div class="toolbar">
+      <div class="tool-btn" id="backBtn" title="Back">◀</div>
+      <div class="tool-btn" id="forwardBtn" title="Forward">▶</div>
+      <div class="tool-btn" id="stopBtn" title="Stop">✖</div>
+      <div class="tool-btn" id="reloadBtn" title="Refresh">⟳</div>
+
+      <div class="address">
+        <input class="url" id="addressInput" value="about:home" />
+        <button class="go-btn" id="goBtn">Go</button>
+      </div>
+
+      <div style="width:8px;"></div>
+      <input id="searchBox" placeholder="Search the web" style="height:24px;padding:4px;border:2px inset #fff" />
+      <button class="go-btn" id="searchBtn">Search</button>
+    </div>
+
+    <div class="content">
+      <div class="sidebar">
+        <div class="favorites">Favorites</div>
+        <div class="fav-item" data-url="about:home">Home Page</div>
+        <div class="fav-item" data-url="about:news">Vintage News</div>
+        <div class="fav-item" data-url="about:msn">MSN (classic)</div>
+        <div class="fav-item" data-url="about:tools">Tools & Tips</div>
+        <hr />
+        <div style="font-size:12px;color:#444;margin-top:8px">History</div>
+        <div id="historyList" style="margin-top:6px;font-size:12px"></div>
+      </div>
+
+      <div class="browser-view">
+        <div class="nav-row" id="navRow"> <strong id="pageTitle">about:home</strong> — <span id="pageUrl">about:home</span></div>
+        <div class="web-frame" id="webFrame" role="main" tabindex="0">
+          <!-- content injected by JS -->
+        </div>
+      </div>
+    </div>
+
+    <div class="statusbar">
+      <div class="status-left" id="statusText">Done</div>
+      <div class="status-right" id="statusRight">Done</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

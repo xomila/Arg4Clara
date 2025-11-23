@@ -7,7 +7,7 @@ function openApp(app) {
             alert("Opening Windows Settings...");
             break;
         case "Internet Explorer":
-            window.open("https://google.com", "_blank"); 
+            window.open("internet.html", "_blank"); 
             break;
         case "Games":
             window.location.href = "games.html";  
